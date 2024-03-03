@@ -1,0 +1,134 @@
+:root{
+    --primary-color: #4D9DE0;
+    --secondary-color: #F3722C;
+    --third-color: #FFFFFF;
+    --border-radius-big-card: 30px;
+    --border-radius-secondary-big-card: 40px;
+    --border-radius-btn-reg: 13px;
+}
+button{
+    background-color: transparent;
+    border: 0;
+}
+section{
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 12rem;
+}
+
+.video-side{
+    height: 100%;
+    direction: rtl;
+    width: 100%;
+}
+.episode-side{
+    width: 100%;
+}
+.video{
+    height: 500px;
+    width: 900px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+iframe{
+    height: 100%;
+    width: 100%;
+}
+.title-video{
+    direction: rtl;
+    color: var(--secondary-color);
+    margin-top: 1rem;
+}
+.episode-side{
+    direction: rtl;
+    width: 100%;
+}
+.episode-side ul{
+    width: 100%;
+    padding-left: 0;
+}
+.episode-side ul li{
+    list-style: none;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    width: 100%;
+    padding: 16px 20px;
+    margin: 1px 0;
+    border: 3px solid var(--secondary-color);
+    border-left: 0;
+    color: var(--third-color);
+}
+.episode-side ul li:hover{
+    filter: brightness(0.9);
+}
+.episode-side ul li a{
+    color: white !important;
+}
+.active-episode{
+    background-color: var(--secondary-color) !important;
+    border: 3px solid var(--primary-color) !important;
+}
+.addEpisode button{
+    font-size: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 350px;
+    color: var(--secondary-color);
+}
+.form-addEpisode{
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    direction: rtl;
+    display: none;
+}
+.background-black{
+    background-color: rgba(0, 0, 0, 0.57);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    display: none;
+
+}
+.active-form{
+    display: flex;
+}
+.dics {
+    white-space: pre-wrap;
+}
+.dics a{
+    color: #F3722C !important;
+}
+@media screen and (max-width: 450px) {
+    section {
+        width: 100%;
+        margin: 0 0;
+        display: block;
+        justify-content: space-around;
+        padding: 0 0;
+        height: auto;
+    } 
+    .video-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 3rem 0;
+    }
+    .video{
+        width: -webkit-fill-available;
+        height: auto;
+    }
+}

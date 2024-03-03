@@ -1,0 +1,39 @@
+:root{
+    --primary-color: #4D9DE0;
+    --secondary-color: #F3722C;
+    --third-color: #FFFFFF;
+    --border-radius-big-card: 30px;
+    --border-radius-secondary-big-card: 40px;
+    --border-radius-btn-reg: 13px;
+}
+section{
+    max-width: 60%;
+    margin: 0 auto;
+}
+.top-section{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-section .img img{
+    width: 100%;
+}
+p{
+    color: var(--secondary-color);
+}
+.container{
+    padding: 2%;
+}
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 30%;
+}
+.loginForm input , a{
+    margin-bottom: 0.8rem;
+}
+.forget-passwords {
+    font-size: 12px;
+}
